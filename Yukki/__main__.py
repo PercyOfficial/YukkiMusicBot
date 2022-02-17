@@ -425,7 +425,7 @@ async def help_button(client, query):
     prev_match = re.match(r"vchelp_prev\((.+?)\)", query.data)
     next_match = re.match(r"vchelp_next\((.+?)\)", query.data)
     back_match = re.match(r"vchelp_back", query.data)
-    create_match = re.match(r"vchelp_create", query.data)
+    create_match = re.match(r"help_create", query.data)
     top_text = f"""Hello {query.from_user.first_name},
 
 Click on the buttons for more information.
